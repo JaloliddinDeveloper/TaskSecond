@@ -1,55 +1,22 @@
-﻿////Basic.Ketma-ketlik bo'limi uchun 2-amaliy vazifa
-////1.Kalkulyator
-//Console.Write("FirstNumber= ");
-//double FirstNumber=double.Parse(Console.ReadLine());
-//Console.Write("Operation: ");
-//string operation=Console.ReadLine();
-//Console.Write("SecondNumber= ");
-//double SecondNumber = double.Parse(Console.ReadLine());
+﻿//Calculator
+Console.Write("a=");
+double a = double.Parse(Console.ReadLine());
+Console.Write("b=");
+double b = double.Parse(Console.ReadLine());
+Console.Write("Operation: ");
+string operation = Console.ReadLine();
+Console.WriteLine(Calculate.CalculateMethod(a, b, operation));
 
-//var result = operation switch
-//{
-//    "+" => $"{FirstNumber} + {SecondNumber} = {FirstNumber+SecondNumber}",
-//    "-" => $"{FirstNumber} - {SecondNumber} = {FirstNumber-SecondNumber}",
-//    "*" => $"{FirstNumber} * {SecondNumber} = {FirstNumber * SecondNumber}",
-//    "/"=> $"{FirstNumber} / {SecondNumber} = {FirstNumber / SecondNumber}",
-//};
+//1 - n gacha bo'lgan sonlar yig'indisini hisoblash
+Console.Write("n=");
+int n = int.Parse(Console.ReadLine());
+Console.WriteLine(Calculate.SumMethod(n));
 
-//Console.WriteLine(result);
+//Tub son tekshiruvi
+Console.Write("t=");
+int t = int.Parse(Console.ReadLine());
+Console.WriteLine(Calculate.IsPrime(t));
 
-////2.Raqamlar qatorining yig‘indisini hisoblash
-//Console.Write("Enter N=");
-//int n=int.Parse(Console.ReadLine());
-//int s = 0,i=1;
-//while (i<=n)
-//{
-//    s=s+i;
-//    i++;
-//}
-//Console.WriteLine($"1 dan {n} gacha bo'lgan sonlar yig'indisi S={s} ga teng ekan");
-
-////3.Tub son tekshiruvi tekshiruvi
-
-//Console.Write("Ixtiyoriy natural son kiriting N=");
-//int n = int.Parse(Console.ReadLine());
-//int s = 0;
-//for (int i = 1; i <=n; i++)
-//{
-//    if (n%i==0)
-//    {
-//        s++;
-//    }
-//}
-//if (s == 2)
-//{
-//    Console.WriteLine($"Berilgan {n} soni tub son ekan ");
-//}
-//else
-//{
-//    Console.WriteLine($"Berilgan {n} soni tub son emas ekan ");
-//}
-
-////-------------------------------------------------------------------------
 
 ////Basic.Ketma - ketlik bo'limi uchun 3-amaliy vazifa
 ///
